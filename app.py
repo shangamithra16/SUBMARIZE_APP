@@ -1,6 +1,8 @@
 import streamlit as st 
 from langchain_community.document_loaders import TextLoader, PyPDFLoader, CSVLoader
-from langchain.text_splitter import CharacterTextSplitter
+from langchain_text_splitters import CharacterTextSplitter
+
+
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
